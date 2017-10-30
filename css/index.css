@@ -1,7 +1,11 @@
 body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .section {background-color: #000;font-size: 24px;line-height: 30px; z-index: 5; overflow: hidden;}
-.Noto{ font-family: 'KoPubDotum';font-weight: 100;letter-spacing:2px;}
-.b4{font-weight: 400;}
+.Noto{ 
+    /* font-family: 'KoPubDotum'; */
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing:2px;}
+/* .b4{font-weight: 400;} */
 /* ------------------------------------------------------------------- */
 .black{z-index: -1;position: absolute;background-color: #000;width: 90%;height: 100%; margin-left: 12%;}
 /* ------------------------------------------------------------------- */
