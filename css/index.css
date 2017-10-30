@@ -6,9 +6,9 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 
 /* ------------------------------------------------------------------- */
 .main {background-color: #fff;background: url('../img/bg.png') no-repeat;background-size: 100%;background-position: top left;}
-.main  > div {width: 90%;margin-left: 10%;height: 72%;padding-top: 120px;}
+.main  > div {width: 90%;margin-left: 10%;height: 72%;margin-top: 120px;}
 /* ------------------------------------------------------------------- */
-.main  dl{display: inline;padding-top: 70px;}
+.main  dl{display: inline;margin-top: 70px;}
 /* ------------------------------------------------------------------- */
 .main  dl:first-of-type{ width:80%;float: left;}
 .main  dl:first-of-type dt{
@@ -22,7 +22,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .main  dl:last-of-type dt{
     -webkit-writing-mode: vertical-lr; 
     -ms-writing-mode: tb-lr; 
-    margin-left: 70%;padding-top: 34px;margin-bottom: 274px;
+    margin-left: 70%;margin-top: 34px;margin-bottom: 274px;
     letter-spacing:5px; 
 }
 .main  dl:last-of-type dd span{display: block;line-height: 28px;}
@@ -41,7 +41,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 /* ------------------------------------------------------------------- */
 .sm,.Created{width: 90%;margin-left: 12%; height: 72%;background-color: rgb(0, 0, 0);}
 .sm,.Created{text-align: center;}
-.sm >dl{padding-top: 100px;}
+.sm >dl{margin-top: 100px;}
 .sm >dl>dt{margin-bottom: 140px; line-height: 56px;font-size: 44px;}
 .sm >dl>dt span{display: block;font-size: 66px;line-height: 76px}
 
