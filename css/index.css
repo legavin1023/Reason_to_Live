@@ -1,6 +1,6 @@
-body {color: #fff; font-family: 'FUTURA';letter-spacing:2px; }
+body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .section {background-color: #000;font-size: 28px;}
-.Noto{ font-family: 'NotoSansKR';font-weight: 100;}
+.Noto{ font-family: 'NotoSansKR';font-weight: 100;letter-spacing:2px;}
 .b4{font-weight: 400;}
 /* ------------------------------------------------------------------- */
 .main {background-color: #fff;background: url('../img/bg.png') no-repeat;background-size: 100%;background-position: top left;}
