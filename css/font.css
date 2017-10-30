@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style:normal;
+    font-weight:400;
+    src: local('NotoSansKR'), local('NotoSansKR'),
+    url(../fonts/NotoSansCJKkr-Light.otf);
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style:normal;
+    font-weight:200;
+    src: local('NotoSansKR'), local('NotoSansKR'),
+    url(../fonts/NotoSansCJKkr-Thin.otf);
+}
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+font-family: 'Noto Sans KR', sans-serif; 
+
+/* ----------------------------------------------- */
+
+@font-face {
+    font-family: 'FUTURA';
+    font-style:normal;
+    font-weight:400;
+    src: local('FUTURA'), local('FUTURA'),
+    url(../fonts/FUTURAMC.TTF);
+}
+@font-face {
+    font-family: 'FUTURA';
+    font-style:normal;
+    font-weight:400;
+    src: local('FUTURA'), local('FUTURA'),
+    url(../fonts/futura.ttc);
+}
