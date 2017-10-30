@@ -1,5 +1,5 @@
 body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
-.section {background-color: #000;font-size: 24px;z-index: 5;}
+.section {background-color: #000;font-size: 24px;z-index: 5; padding-top: 20%;height: 80%;}
 .Noto{ font-family: 'KoPubDotum';font-weight: 100;letter-spacing:2px;}
 .b4{font-weight: 400;}
 /* ------------------------------------------------------------------- */
@@ -22,7 +22,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .main  dl:last-of-type dt{
     -webkit-writing-mode: vertical-lr; 
     -ms-writing-mode: tb-lr; 
-    margin-left: 70%;margin-top: 34px;margin-bottom: 160px;
+    margin-left: 70%;padding-top: 34px;margin-bottom: 160px;
     letter-spacing:5px; 
 }
 .main  dl:last-of-type dd span{display: block;line-height: 28px;}
