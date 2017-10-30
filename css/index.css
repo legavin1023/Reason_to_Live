@@ -14,7 +14,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
     font-size: 88px; line-height: 108px;
 }
 .main  dl:first-of-type dd{margin-left: 10%;margin-bottom: 26px; line-height: 28px;}
-.main  dl:first-of-type dd:first-of-type{font-size: 44px;margin-bottom: 32px;background-color: red;}
+.main  dl:first-of-type dd:first-of-type{font-size: 44px;margin-bottom: 32px;}
 /* ------------------------------------------------------------------- */
 .main  dl:last-of-type{ width:24%;float: right;}
 .main  dl:last-of-type dt{
@@ -41,7 +41,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .sm,.Created{text-align: center;}
 .sm dl{padding-top: 10%;}
 .sm dt,.Created div>dl>dt{margin-bottom: 10%; line-height: 56px;font-size: 44px;}
-.sm dt span,.Created div>dl>dt span{display: block;font-size: 88px;}
+.sm dt span,.Created div>dl>dt span{display: block;font-size: 66px;}
 .Created div>dl>dt span {padding-top: 10%;}
 .sm img{width:60%; height: auto;}
 
@@ -52,7 +52,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .Introduce  dd:nth-of-type(4){line-height: 42px;}
 /* ------------------------------------------------------------------- */
 .Guide dd:first-of-type{font-size: 32px;margin: 40px 0;}
-.Guide dd:nth-of-type(2){font-size: 88px;margin:52px 0;}
+.Guide dd:nth-of-type(2){font-size: 66px;margin:52px 0;}
 .Guide dd:nth-of-type(3){font-size: 44px;line-height: 50px;}
 /* ------------------------------------------------------------------- */
 
