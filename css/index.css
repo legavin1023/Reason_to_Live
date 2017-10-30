@@ -70,3 +70,4 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .Created dl dd:nth-of-type(3)> dl{ width: 100%;clear: both;}
 .Created dl dd>dl dd{line-height: 32px;}
 /* ------------------------------------------------------------------- */
+.size{font-size: 24px;}
