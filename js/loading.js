@@ -1,9 +1,9 @@
 
 
-$(document).ready(function(){   
+$(window).ready(function(){   
         $("div#loader").css("display","none");   
 });
-
+//documen
 // $(window).ready(function(){ 
 //     var _showPage = function(){
 //         var loader = $("div#loader");

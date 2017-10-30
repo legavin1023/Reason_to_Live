@@ -25,7 +25,7 @@
 	$(document).ready(function() {
 		$('#myContainer').fullpage({
 			// sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],
-			// anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+			anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5'],
 			menu: '#menu',
 			slidesNavigation: true,
 			scrollHorizontally: true,
@@ -46,11 +46,23 @@
 <body>
 
 	<div id="loader"></div>
+	<nav>	
+		<ul >
+			<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Main</a></li>
+			<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
+			<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide_1</a></li>
+			<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Guide_2</a></li>
+			<li data-menuanchor="Page_4" class="active"><a href="#Page_4">Guide_3</a></li>
+			<li data-menuanchor="Page_5" class="active"><a href="#Page_5">Created</a></li>
+			
+		</ul>
+	</nav>
 	<div id="myContainer">
 			
 			
 			<!-- <div class="slide">
 			</div> -->
+		
 			<div class="section main">
 				<div>	
 					<dl>
