@@ -1,24 +1,18 @@
 @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'KoPubDotum';
     font-style:normal;
     font-weight:400;
-    src: local('NotoSansKR'), local('NotoSansKR'),
-    url(../font/NotoSansCJKkr-Light.otf)format('opentype');
-    /* src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
-    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
-    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); */
+    src: local('KoPubDotum'), local('KoPubDotum'),
+    url(../font/KoPub_Dotum_Medium.ttf), url(KoPub_Dotum_Pro_Medium.otf);
     ;
 }
 
 @font-face {
-    font-family: 'NotoSansKR';
+    font-family: 'KoPubDotum';
     font-style:normal;
     font-weight:100;
-    src: local('NotoSansKR'), local('NotoSansKR'),
-    url(../font/NotoSansCJKkr-Thin.otf)format('opentype');
-    /* src :url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
-    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
-    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype'); */
+    src: local('KoPubDotum'), local('KoPubDotum'),
+    url(../font/KoPub_Dotum_Light.ttf), url(KoPub_Dotum_Pro_Light.otf);
 }
 
 
