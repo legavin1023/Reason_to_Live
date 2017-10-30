@@ -6,7 +6,7 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .main {background-color: #fff;background: url('../img/bg.png') no-repeat;background-size: 100%;background-position: top left;}
 .main  > div {width: 90%;margin-left: 10%;height: 72%;padding-top: 20%;}
 /* ------------------------------------------------------------------- */
-.main  dl{display: inline;margin-top: 88px;}
+.main  dl{display: inline;padding-top: 70px;}
 /* ------------------------------------------------------------------- */
 .main  dl:first-of-type{ width:76%;float: left;}
 .main  dl:first-of-type dt{
