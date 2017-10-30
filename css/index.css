@@ -1,5 +1,5 @@
 body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
-.section {background-color: #000;font-size: 24px;z-index: 5; padding-top: 20%;height: 80%;}
+.section {background-color: #000;font-size: 24px;z-index: 5;}
 .Noto{ font-family: 'KoPubDotum';font-weight: 100;letter-spacing:2px;}
 .b4{font-weight: 400;}
 /* ------------------------------------------------------------------- */
@@ -10,19 +10,19 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 /* ------------------------------------------------------------------- */
 .main  dl{display: inline;padding-top: 70px;}
 /* ------------------------------------------------------------------- */
-.main  dl:first-of-type{ width:76%;float: left;}
+.main  dl:first-of-type{ width:80%;float: left;}
 .main  dl:first-of-type dt{
-    margin-left: 10%;margin-bottom:100px; 
-    font-size: 88px; line-height: 108px;
+    margin-left: 10%;margin-bottom:200px; 
+    font-size: 100px; line-height: 108px;
 }
-.main  dl:first-of-type dd{margin-left: 10%;margin-bottom: 26px; line-height: 28px;}
-.main  dl:first-of-type dd:first-of-type{font-size: 44px;margin-bottom: 32px;}
+.main  dl:first-of-type dd{font-size: 32px;margin-left: 10%;margin-bottom: 26px; line-height: 36px;}
+.main  dl:first-of-type dd:first-of-type{font-size: 60px;margin-bottom: 40px;}
 /* ------------------------------------------------------------------- */
-.main  dl:last-of-type{ width:24%;float: right;}
+.main  dl:last-of-type{ width:20%;float: right;}
 .main  dl:last-of-type dt{
     -webkit-writing-mode: vertical-lr; 
     -ms-writing-mode: tb-lr; 
-    margin-left: 70%;padding-top: 34px;margin-bottom: 160px;
+    margin-left: 70%;padding-top: 34px;margin-bottom: 274px;
     letter-spacing:5px; 
 }
 .main  dl:last-of-type dd span{display: block;line-height: 28px;}
@@ -34,16 +34,16 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 /* ------------------------------------------------------------------- */
 .main  button {
     background-color: rgb(255, 255, 255); 
-    width: 48%;height: 88px;margin-left: 26%;margin-top: 20%;
+    width: 48%;height: 88px;margin-left: 26%;margin-top: 100px;
     font-size: 44px; 
     border: none;border-radius: 88px;
 }
 /* ------------------------------------------------------------------- */
 .sm,.Created{width: 90%;margin-left: 12%; height: 72%;background-color: rgb(0, 0, 0);}
 .sm,.Created{text-align: center;}
-.sm >dl{padding-top: 10%;}
-.sm >dl>dt{margin-bottom: 10%; line-height: 56px;font-size: 44px;}
-.sm >dl>dt span{display: block;font-size: 66px;}
+.sm >dl{padding-top: 100px;}
+.sm >dl>dt{margin-bottom: 140px; line-height: 56px;font-size: 44px;}
+.sm >dl>dt span{display: block;font-size: 66px;line-height: 76px}
 
 /* ------------------------------------------------------------------- */
 .Introduce  dd {font-size: 32px;}
@@ -56,6 +56,8 @@ body {color: #fff; font-family: 'FUTURA';letter-spacing:5px; }
 .Guide dd:nth-of-type(3){font-size: 44px;line-height: 60px;}
 .Guide img{width:45%; height: auto;}
 /* ------------------------------------------------------------------- */
+.Created>dl>dt{margin-bottom: 100px;font-size: 34px; line-height: 46px;}
+.Created>dl>dt span{display: block;font-size: 52px;line-height: 66px}
 
 .Created dl dd> dl dt img{
     width:  240px; height:240px;  margin-bottom: 20px; 
