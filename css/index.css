@@ -1,7 +1,8 @@
 nav{position: absolute;}
  /* ========================================================== */
 body{background-color: #000;color: #fff;}
-nav,footer {z-index: 10; position: absolute;}
+nav {z-index: 10; position: absolute;}
+footer {z-index: 20; position: absolute;}
 .section{z-index: 1;}
  /* ========================================================== */
 a:link { color: rgb(0, 0, 0); text-decoration: none;}
@@ -16,8 +17,7 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
 }
  /* ========================================================== */
 @media only screen and (min-width: 1024px){
-    /* .mo{display:none;} */
-    .section,nav,footer{display: none;}
+    .section,nav,footer,.tpfh, .mo{display: none;}
     .dlatlqkdvus {background-color: #fff;color: #000; text-align: center;width: 100%;height: 100%;}
     .dlatlqkdvus p { margin-bottom: 10px;font-size: 24px;display: block;}
     .dlatlqkdvus img {width: 300px;height:300px; margin: 0 auto; display: block}
@@ -25,8 +25,29 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
 }
  /* ========================================================== */
 
- @media only screen and (max-width: 1000px){
-    .web,.dlatlqkdvus{display:none;}
+ @media  (max-width: 1023px){
+    .web,.dlatlqkdvus,.tpfh{display:none;}
+ /* ========================================================== */    
+    .menu a{cursor:pointer;}
+    .menu .hide{display:none;}
+
+    .menu ul{
+        display: block;
+        position: absolute;  
+        top: 54px;
+        left: 0px;
+        width: 100%;        
+    }
+    .menu ul li{
+        width: 100%; height: 80px;
+        background-color:rgba(42, 42, 42, 0.9);
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+    } 
+    /* .menu ul li:nth-of-type(2n){
+        background-color:rgba(36, 36, 36, 0.9);        
+    } */
     nav.mo {
         margin-top: 20px;  
         width: 100%;
@@ -70,7 +91,7 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
         top: -4%;
     }     
     /* ========================================================== */           
-    .Introduce img{
+    /* .Introduce img{
         width: 50%; height: auto;   
         margin-bottom: 8%;    
     }
@@ -83,7 +104,7 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
         margin-bottom: 6%; 
         font-size: 26px;
         line-height:34px;
-    } 
+    }  */
     /* ========================================================== */
     .Guide dt{
         margin-bottom: 16%;         
@@ -102,10 +123,32 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
         line-height:34px;    
     }
     .Guide img{
-        width: 160px; height:auto;
+        width: 120px; height:auto;
         margin-bottom: 4%;         
     }
-    /* ========================================================== */
+     
+}
+    
+
+@media (min-width:321px) and (max-width: 1023px){
+    .Introduce img{
+        width: 50%; height: auto;   
+        margin-bottom: 8%;    
+    }
+    .Introduce dd{
+        margin-bottom: 4%;
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .Introduce dd:first-of-type{
+        margin-bottom: 6%; 
+        font-size: 26px;
+        line-height:34px;
+    } 
+      /* ========================================================== */
+      #zindex{
+        z-index: 15;
+    }
     .Created{
         text-align: center
     }
@@ -142,5 +185,60 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
         margin-bottom: 10px; 
         display: block;              
     }
-    
+}
+@media (max-width: 320px) and  (orientation:portrait){
+    .Introduce img{
+        width: 50%; height: auto;   
+        margin-bottom: 8%;    
+    }
+    .Introduce dd{
+        margin-bottom: 4%;
+        line-height: 18px;
+        font-size: 13px;
+    }
+    .Introduce dd:first-of-type{
+        margin-bottom: 6%; 
+        font-size: 26px;
+        line-height:34px;
+    } 
+      /* ========================================================== */
+      #zindex{
+        z-index: 15;
+    }
+    .Created{
+        text-align: center
+    }
+    .Created>dl{
+        position: relative;
+        top: 3%;}
+    .Created>dl>dt{
+        font-size: 22px;
+        line-height:30px;
+        margin-bottom: 6%;          
+    }
+    .Created>dl>dt p{
+        font-size: 18px;
+        line-height:26px;       
+    }
+    .Created>dl>dt p span{
+        font-size: 12px;
+    }
+    .Created dl,.Created dd{
+        margin-bottom: 1%;     
+    }
+    .Created dl dd> dl { 
+        width: 50%;
+        float: left;
+    }
+    .Created dl dd:nth-of-type(3)> dl{ 
+        width: 100%;
+        clear: both;
+    }
+    .Created dl dd> dl dt img{
+        width:  70px; height:70px;                  
+        border-radius:200px;        
+        margin: 0 auto;
+        margin-bottom: 10px; 
+        display: block;              
+    }
 }

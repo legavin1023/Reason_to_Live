@@ -24,29 +24,42 @@
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#myContainer').fullpage({
-				anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5', 'Page_6'],
+				// anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5', 'Page_6'],
 				loopTop: true,
 				loopBottom: true,
 				'verticalCentered': false
 			});
 		});
 		</script>
+		<script>			
+			$(document).ready(function(){			
+				$(".menu>a").click(function(){
+					var submenu = $(this).next("ul");	
+					if( submenu.is(":visible") ){
+						submenu.slideUp();
+					}else{
+						submenu.slideDown();
+					}
+				});
+			});
+		</script>
+			
 	</head>
 	<body>
 	<!-- ===============================모바일================================== -->
 		<nav class="mo">
-				<!-- <ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Introduce</a></li>
-					<li><a href="#">Guide</a></li>
-					<li><a href="#">Created by</a></li>
-				</ul> -->
-				<ul>
-					<li>
-							<a href=""><img src="./img/nav-icon.png" alt=""></a>
-					</li>
-				</ul>
-			</nav>
+			<ul>
+				<li class="menu">
+					<a><img src="./img/nav-icon.png" alt=""></a>
+					<ul class="hide">
+						<li>Home</li>
+						<li>Introduce</li>
+						<li>Guide</li>
+						<li>Created by</li>
+					</ul>
+				</li>			
+			</ul>	
+		</nav>
 	<!-- ================================웹================================== -->
 			<nav class="web">
 				<ul>
@@ -63,8 +76,9 @@
 			<div>
 				<p>모바일로 접속해 주세요</p>
 				<img src="./img/QR_Code_Reason_to_Live.png" alt="">
-			</div>
+			</div>			
 		</div>
+	
 	<!-- ================================웹================================== -->
 		<div id="myContainer">
 	<!-- ===============================웹================================== -->
@@ -160,7 +174,7 @@
 			</div>	
 	<!-- =================================웹================================ -->
 
-			<div class="section Created " id="z">
+			<div class="section Created " id="zindex">
 				<dl>
 					<dt>Created by<p><span>team</span> Action Beam</p></dt>
 					<dd>
