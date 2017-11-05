@@ -19,30 +19,39 @@
 		<!-- <script type="text/javascript" src="./js/jquery-ui.min.js"></script>	 -->
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>	
 		<script type="text/javascript" src="./js/jquery.fullpage.js"></script>
+		<script type="text/javascript" src="./js//scrolloverflow.js"></script>
 		<!-- <script type="text/javascript" src="./js/loading.js"></script> -->
 		
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#myContainer').fullpage({
-				// anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5', 'Page_6'],
+				anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5'],
 				loopTop: true,
 				loopBottom: true,
-				'verticalCentered': false
+				slidesNavigation: true,
+				'verticalCentered': false				
 			});
 		});
-		</script>
-		<script>			
-			$(document).ready(function(){			
-				$(".menu>a").click(function(){
-					var submenu = $(this).next("ul");	
-					if( submenu.is(":visible") ){
-						submenu.slideUp();
-					}else{
-						submenu.slideDown();
-					}
-				});
+
+		$(document).ready(function() {
+			$('#movetopbt').bind('click', function() {
+				$(document).animate({scrollTop: '0'}, 680);
 			});
-		</script>
+		// 애니메이션 효과로 자연스럽게 이동됨, 0.68초	
+		
+		});
+		
+		$(document).ready(function(){			
+			$(".menu>a").click(function(){
+			var submenu = $(this).next("ul");	
+			if( submenu.is(":visible") ){
+				submenu.slideUp();
+				}else{
+					submenu.slideDown();
+				}
+			});
+		});
+	</script>
 			
 	</head>
 	<body>
@@ -52,10 +61,10 @@
 				<li class="menu">
 					<a><img src="./img/nav-icon.png" alt=""></a>
 					<ul class="hide">
-						<li>Home</li>
-						<li>Introduce</li>
-						<li>Guide</li>
-						<li>Created by</li>
+						<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a></li>
+						<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
+						<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
+						<li data-menuanchor="Page_5" class="active"><a href="#Page_5">Created by</a></li>
 					</ul>
 				</li>			
 			</ul>	
@@ -63,10 +72,10 @@
 	<!-- ================================웹================================== -->
 			<nav class="web">
 				<ul>
-					<li>Home</li>
-					<li>Introduce</li>
-					<li>Guide</li>
-					<li>Created by</li>
+					<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a></li>
+					<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
+					<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
+					<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
 				</ul>
 			</nav>
 	<!-- ================================웹================================= -->
@@ -81,9 +90,10 @@
 	
 	<!-- ================================웹================================== -->
 		<div id="myContainer">
+			
 	<!-- ===============================웹================================== -->
 			<div class="section main">
-				<div class="web">	
+				<div class="web">
 					<dl>
 						<dt>Exhibiton at.</dt>
 						<dd>Kaywon University of Art &amp; Design</dd>
@@ -123,8 +133,8 @@
 					
 				</dl>
 			</div>	
-	<!-- =================================모바일================================ -->
-			<div class="section Guide center">
+	<!-- =================================웹================================ -->
+			<div class="section Guide center ">
 				<dl class="web">		
 					<dt>Exhibiton Guide</dt>
 					<dd>
@@ -145,15 +155,46 @@
 						<dd>Look around</dd>
 						<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>	
 					</dd>		
-				</dl>	
-				<dl class="mo">		
+				</dl>
+				
+				<dl class=" Guide mo">					
 					<dt>Exhibiton Guide</dt>
 					<dd>01</dd>
 					<dd><img src="./img/2g_1.png" alt=""></dd>		
 					<dd>Tap it</dd>						
-					<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>
+					<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>			
 				</dl>
+	<!-- =================================모바일================================ -->
+<!-- 	
+				<div class="slide mo">		
+					<dl>
+						<dt>Exhibiton Guide</dt>
+						<dd>01</dd>
+						<dd><img src="./img/2g_1.png" alt=""></dd>		
+						<dd>Tap it</dd>						
+						<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>
+					</dl>
+				</div>
+				<div  class="slide mo">
+					<dl>
+						<dt>Guide</dt>			
+						<dd>02</dd>
+						<dd><img src="./img/2g_2.png" alt=""></dd>							
+						<dd>Scale it</dd>
+						<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>
+					</dl>
+				</div>
+				<div  class=" slide mo">
+				<dl>
+					<dt>Guide</dt>							
+					<dd>03</dd>
+					<dd><img src="./img/2g_3.png" alt=""></dd>						
+					<dd>Look around</dd>
+					<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>	</dl>		
+				</div>	 -->
 			</div>		 
+		
+				
 			<div class="section Guide mo center">
 				<dl>
 					<dt>Guide</dt>			
