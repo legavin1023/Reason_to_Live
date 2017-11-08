@@ -250,6 +250,7 @@ nav {
 .QR img{
     width: 18%;
     min-width: 150px;
+    transition: 0.5s;
     height: auto;
 }
 .QR img:hover{
