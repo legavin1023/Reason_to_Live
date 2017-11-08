@@ -19,21 +19,23 @@
 
 
 /* ----------------------------------------------- */
-@font-face {
-    font-family:'Helvetica';
-    src: 
-    url(../HelveticaNeueLTPro_Lt.ttf)format(TrueType),
-    url(../HelveticaNeueLTPro_Lt.otf)format(OpenType);
-    font-style:normal;
-    font-weight:100;
-}
 
 @font-face {
     font-family:'Helvetica';
+    font-style:normal;
+    font-weight:400;
     src: 
     url(../HelveticaNeueLTPro_Bd.ttf)format(TrueType),
     url(../HelveticaNeueLTPro_Bd.otf)format(OpenType);
-    font-style:normal;
-    font-weight:400;
+   
 }
 
+@font-face {
+    font-family:'Helvetica';
+    font-style:normal;
+    font-weight:100;
+    src: 
+    url(../HelveticaNeueLTPro_Lt.ttf)format(TrueType),
+    url(../HelveticaNeueLTPro_Lt.otf)format(OpenType);
+    
+}

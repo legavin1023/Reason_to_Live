@@ -6,8 +6,14 @@
 		<title>삶의 이유</title>
 		
 		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="stylesheet" type="text/css" href="./css/index_m.css" />
 		<link rel="stylesheet" type="text/css" href="./css/font.css" />
+
+		<!--[if IE]>
+			<script type="text/javascript">
+				var console = { log: function() {} };
+			</script>
+		<![endif]-->
 
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>	
@@ -22,72 +28,51 @@
 				anchors: ['main', 'Page_1', 'Page_2', 'Page_3', 'Page_4'],
 				loopTop: true,
 				loopBottom: true,
-				// slidesNavigation: true,
+				slidesNavigation: true,
 				'verticalCentered': false				
 			});
 		});
 
-		// $(document).ready(function() {
-		// 	$('#movetopbt').bind('click', function() {
-		// 		$(document).animate({scrollTop: '0'}, 680);
-		// 	});
-		// // 애니메이션 효과로 자연스럽게 이동됨, 0.68초	
+		$(document).ready(function() {
+			$('#movetopbt').bind('click', function() {
+				$(document).animate({scrollTop: '0'}, 680);
+			});
+		// 애니메이션 효과로 자연스럽게 이동됨, 0.68초
 		
-		// });
-		
+		});
+		$(document).ready(function(){			
+			$(".menu>a").click(function(){
+			var submenu = $(this).next("ul");	
+			if( submenu.is(":visible") ){
+				submenu.slideUp();
+				}else{
+					submenu.slideDown();
+				}
+			});
+		});
 	</script>
-	<!-- <script type="text/javascript">
-		var filter = "win16|win32|win64|mac";
-
-		if(navigator.platform){
-			if(0 > filter.indexOf(navigator.platform.toLowerCase())){
-				location.href='index_m.html';
-			}else{
-			alert("PC");
-			}
-		}
-	</script> -->
-
-	<script language="JavaScript">
-      var uAgent = navigator.userAgent.toLowerCase();
-      var mobilePhones = new Array('iphone','ipod','android','blackberry','windowsce','nokia','webos','operamini','sonyericsson','opera mobi','iemobile');
-      for(var i=0;i<mobilePhones.length;i++)
-            if(uAgent.indexOf(mobilePhones[i]) != -1)
-                    document.location="./index_m.html";
-	</script>
-
-
-		
+			
 	</head>
 	<body>
 		<nav>		
-			<ul class="main-nav">
-				<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
-				<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
-				<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
-				<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created_by</a></li>
-				<li data-menuanchor="Page_4" class="active"><a href="#Page_4">QR</a></li>
-			</u>
+			<ul>
+				<li class="menu">
+					<a><img src="./img/nav-icon.png" alt=""></a>
+					<ul class="hide">
+						<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a></li>
+						<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
+						<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
+						<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
+					</ul>
+				</li>			
+			</ul>	
 		</nav>
+	
+		<footer><a href="https://framer.cloud/BiMMI">Join</a></footer>
 		
 		<div id="myContainer">
 			<div class="section main" id="mainS">
-				<div>
-					<dl>
-						<dt>Exhibiton at.</dt>
-						<dd>Kaywon University of Art &amp; Design</dd>
-						<dd>Digital Media Design</dd>
-						<dd>Gradutation Show</dd>
-					</dl>
-					<dl class="day">
-						<dt>Fri.</dt>
-						<dd>2017.</dd>
-						<dd>11.17</dd>
-						<dt>Mon.</dt>
-						<dd>2017.</dd>
-						<dd>11.20</dd>
-					</dl>
-				</div>		
+			
 			</div>		
 			<div class="section Introduce center" id="PageS_1">
 				<dl>
@@ -113,33 +98,29 @@
 				</dl>
 			</div>	
 			<div class="section Guide center " id="PageS_2">
-				<dl>		
+				<dl class="slide">		
 					<dt>Exhibiton Guide</dt>
-					<dd class="center">
-						<div class="N123 ">					
-							<dl>
-								<dt>01</dt>
-								<dd><img src="./img/2g_1.png" alt=""></dd>		
-								<dd>Tap it</dd>						
-								<dd class="Noto">여러 사람들의 살아가는  <br>이유를 볼 수 있어요.</dd>					
-							</dl>
-							<dl>
-								<dt>02</dt>
-								<dd><img src="./img/2g_2.png" alt=""></dd>							
-								<dd>Scale it</dd>
-								<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>									
-							</dl>
-							<dl>						
-								<dt>03</dt>
-								<dd><img src="./img/2g_3.png" alt=""></dd>						
-								<dd>Look around</dd>
-								<dd class="Noto">사람들의 살아가는 이유로 가득<br>찬 공간을 둘러보세요.</dd>	
-							</dl>		
-						</div>	
-					</dd>					
-				</dl>				
-			</div>	
-
+					<dd>01</dd>
+					<dd><img src="./img/2g_1.png" alt=""></dd>		
+					<dd>Tap it</dd>						
+					<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>			
+				</dl>
+				<dl class="slide">			
+					<dt>Exhibiton Guide</dt>			
+					<dd>02</dd>
+					<dd><img src="./img/2g_2.png" alt=""></dd>							
+					<dd>Scale it</dd>
+					<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>
+				</dl>
+				<dl class="slide">					
+					<dt>Exhibiton Guide</dt>							
+					<dd>03</dd>
+					<dd><img src="./img/2g_3.png" alt=""></dd>						
+					<dd>Look around</dd>
+					<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>			
+				</dl>	
+			</div>	 
+		
 			<div class="section Created center" id="PageS_3">
 				<dl>
 					<dt>Created by<p><span>team</span> Action Beam</p></dt>
@@ -182,15 +163,6 @@
 					</dd>
 				</dl>
 			</div>
-
-
-			<div class="section QR center" id="PageS_4">
-					<dl>						
-						<dt>Movile</dt>
-						<dd><img src="./img/QR_Code_Reason_to_Live.png" alt="QR code"></dd>
-					</dl>	
-			</div>
-				
 		</div>
 	</body>
 </html>

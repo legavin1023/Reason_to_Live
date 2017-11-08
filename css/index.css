@@ -22,7 +22,7 @@ a:hover { color: rgb(0, 0, 0); text-decoration: underline;}
 body{
     font-family:'Helvetica';
     font-style:normal;
-    font-weight:100;    
+    font-weight:400;    
     letter-spacing: 0.1vw; 
 }
 
@@ -56,16 +56,16 @@ nav {
     padding-right: 2%;    
 }
 .main-nav a {
-    /* margin: 1%; */
-    color: #fff;
+    /* margin: 1%; */    
     display: block;
     text-decoration: none;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
+    line-height: 1.4vw;
+    transition: 0.5s;       
+    color: rgb(136, 136, 136);    
 }
 .main-nav a:hover{
-    position: relative;
-    top:-6px;
- 
+    color: #fff;
  }
 
 /* ========================================================== */
@@ -137,8 +137,8 @@ nav {
 } */
 .Introduce dd{
     margin-bottom: 4%;
-    line-height: 1.4vw;
-    font-size: 1vw;
+    line-height: 1.6vw;
+    font-size: 1.2vw;
 }
 .Introduce dd:first-of-type{
     margin-bottom: 6%; 
