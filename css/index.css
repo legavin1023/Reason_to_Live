@@ -37,442 +37,221 @@ body{
     font-style:normal;
     font-weight:400; 
 }
- /* ========================================================== */
-@media only screen {
-    body{
-        min-height: 800px;
-        min-width: 1280px;
-    }
-    .mo{display: none;}
-    nav {
-        width: 100%;
-        margin: 2% 0;        
-    }
-    .main-nav {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        justify-content: flex-end;
-    }
-    .main-nav a {
-        /* margin: 1%; */
-        color: #fff;
-        display: block;
-        padding: 0 15%;
-        text-decoration: none;
-        font-size: 1.6vw;
-    }
-    .main-nav a:hover{
-        position: relative;
-        top:-6px;
-     
-     }
- /* ========================================================== */
-    
-    .main{
-        background: url('../img/logo.png') no-repeat;   
-        background-position: center 30%;
-        background-size: 20%;
-    } 
-    /* .main img{
-        width: 30vw; height: auto;
-        margin: 0  auto; margin-top: -60px;
-    } */
- /* ========================================================== */
-    .main dl:first-of-type{
-          margin: 2%;
-          position: relative;
-          top :5%;
-    }
-      .main dl:first-of-type dt{
-        font-weight: 400;
-        font-size: 3.6vw;
-        margin-bottom: 1%;
-        
-    }
-    .main dl:first-of-type dd{
-        font-size: 1.4vw;
-        line-height: 1.8vw;
-    }
-    .day{
-        float: right;
-        clear: both;         
-        position: relative; 
-        margin-right: 20%;
-        margin-top: 11%;
-    }
-    .day dt{
-        font-size: 1.2vw;
-        margin-bottom: 1%;
-    }
-    .day dd{
-        font-weight: 400;    
-        font-size: 4vw;    
-    }
-    .day dd:nth-of-type(2n){
-        margin-bottom: 10%;        
-    }
- /* ========================================================== */
-    .Introduce{
-        width: 80%; margin: 0 auto;        
-    }
-    .Introduce dl,.Guide dl{       
-        position: relative;
-        top:-2%;
-    }
-    
-    .Introduce dt iframe{
-        /* width: 100%;  */
-        /* margin: 0 auto;        */
-        margin-bottom: 5%;    
-    }
-    /* .Introduce img{
-        width: 50%; height: auto;   
-        margin-bottom: 8%;    
-        transition: 0.5s;
-    }
-    .Introduce img:hover{
-        width:  55%; height:auto;  
-    } */
-    .Introduce dd{
-        margin-bottom: 4%;
-        line-height: 1.4vw;
-        font-size: 1vw;
-    }
-    .Introduce dd:first-of-type{
-        margin-bottom: 6%; 
-        font-size: 2.2vw;
-        font-weight: 400;
-        line-height:2.6vw;
-    } 
- /* ========================================================== */
-    .Guide dl>dt {
-        margin-bottom: 5%; 
-        font-size: 2.2vw;
-        font-weight: 400;
-        line-height:2.6vw;
-    }
-    .N123 {
-        width: 80%;
-    }
-    .N123 dl{
-        float: left;
-        width: 33%;
-        /* border: 1px solid #fff; */
-    }
-    .N123 img{
-        width: 40%;
-        margin-bottom: 2%;   
-    }
-    .N123 dt{
-        font-size: 2.2vw;
-        font-weight: 400;
-        line-height:2.6vw;
-        margin-bottom: 5%;
-    }
+body{
+    min-height: 800px;
+    min-width: 1280px;
+}
+.mo{display: none;}
+nav {
+    width: 100%;
+    margin: 2% 0;        
+}
+.main-nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+.main-nav li{
+    padding-right: 2%;    
+}
+.main-nav a {
+    /* margin: 1%; */
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6vw;
+}
+.main-nav a:hover{
+    position: relative;
+    top:-6px;
  
-    .N123 dl dd{     
-        float: left;    
-        text-align: left;
-    }
-    .N123 dl dd:first-of-type{
-        width:  40%; height: auto;   
-    }
-    .N123 dl dd img{     
-        width:  90% ;height: auto;   
-        transition: 0.5s;
-    }
-    .N123 dl dd img:hover{
-        width:  100%; height:auto;  
-    }
-    .N123 dl dd:nth-of-type(2){
-        margin-bottom: 1%;
-        margin-left: 5%;
-        line-height: 2.2vw;
-        font-size: 1.8vw;
-        width: 55%;        
-        
-    } 
-    .N123 dl dd:nth-of-type(3){
-        margin-left: 5%;
-        line-height: 1.4vw;
-        font-size: 1vw;
-        width: 55%;
-    }
- /* ========================================================== */
-    .Created{
-        clear: both;
-    }   
-    .Created>dl>dt{
-        font-size: 2.2vw;
-        line-height:2.6vw;
-        margin-bottom: 8%;     
-        text-align: center;     
-    }
-    .Created>dl>dt p{
-        font-size: 1.6vw;
-        line-height:2.2vw;       
-    }
-    .Created>dl>dt p span{
-        font-size: 1.2vw;
-    }
-    .pic{
-        width: 80%; margin: 0 auto;
-    }
-    .pic div {
-        float: left;  
-        width: 23%;
-        text-align: center;
-        margin: 0 2%;
-    }
-    .pic img{
-        width:  90%;              
-        border-radius:100%;      
-        margin: 0 auto;
-        margin-bottom: 6%; 
-        display: block;    
-        transition: 0.5s;
-    }
-    .pic img:hover{
-        width:  100%;  
-    }
-    .pic dd{
-        line-height: 2.2vw;
-        font-size: 1.6vw;
-    }
-    .pic dd.Noto{
-        font-size: 2.2vw;
-        line-height:2.6vw;
-    }
-    
-}
- /* ========================================================== */
+ }
 
- @media  (max-width: 620px){
-    .web{display:none;}
- /* ========================================================== */    
-    .menu a{cursor:pointer;}
-    .menu .hide{display:none;}
+/* ========================================================== */
 
-    .menu ul{
-        display: block;
-        position: absolute;  
-        top: 108px;
-        left: 0px;
-        width: 100%;        
-    }
-    .menu ul li{
-        width: 100%; height: 160px;
-        background-color:rgba(42, 42, 42, 0.9);
-        text-align: center;
-        line-height: 160px;
-        font-size: 100px;
-    } 
-    .menu ul li a{
-        text-align: center;
-        line-height: 160px;
-        font-size: 100px;
-        color: #fff;
-    }
-    /* .menu ul li:nth-of-type(2n){
-        background-color:rgba(36, 36, 36, 0.9);        
-    } */
-    nav.mo {
-        margin-top: 4vw;  
-        width: 100%;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: flex-end;
-        justify-content: flex-end;       
-    }
-    nav.mo a{
-        margin: 4vw;
-        text-indent: -9999px;
-        color: none;
-        font-size: 0px;
-    }
-    nav.mo a img { width: 100px; height: auto;}
-    /* ========================================================== */
-    footer {
-        width: 100%;
-        bottom: 4vw;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
-    footer a{ 
-        padding:2vw 50px;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 100px;
-        font-size: 72px;
-    }
-    /* ========================================================== */
-    .main{
-        background: url('../img/logo.png') no-repeat;   
-        background-position: center 30%;
-        background-size: 70%;
-    }    
-    /* ========================================================== */ 
-    .Introduce dl,.Guide dl{       
-        position: relative;
-        top: -4vw;
-    }     
-    
-    /* ========================================================== */           
-    .Introduce img{
-        width: 50%; height: auto;   
-        margin-bottom: 8%;    
-    }
-    .Introduce dd{
-        margin-bottom: 4%;
-        line-height: 44px;
-        font-size: 2.8vw;
-    }
-    .Introduce dd:first-of-type{
-        margin-bottom: 6%; 
-        font-size: 52px;
-        line-height:68px;
-    } 
-    /* ========================================================== */
-    .Guide dl dt{
-        margin-bottom: 16%;         
-    }
-    .Guide dt,.Guide dl dd:first-of-type{
-        font-size: 60px;
-        line-height:76px;
-    }
-    .Guide dl dd{
-        margin-bottom: 4%;       
-        font-size: 3.6vw;
-        line-height: 52px;
-    }
-    .Guide dl dd:nth-of-type(3){
-        font-size: 52px;        
-        line-height:68px;    
-    }
-    .Guide dl dd img{
-        width: 240px; height:auto;
-        margin-bottom: 4%;         
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-      }
-      .swiper-slide {
-        text-align: center;
-        font-size: 1.8vw;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-       /* ========================================================== */
-    .Created{
-        text-align: center
-    }
-    .Created>dl{
-        position: relative;
-        top: 4%;}
-    .Created>dl>dt{
-        font-size: 52px;
-        line-height:68px;
-        margin-bottom: 8%;          
-    }
-    .Created>dl>dt p{
-        font-size: 4vw;
-        line-height:56px;       
-    }
-    .Created>dl>dt p span{
-        font-size: 2.8vw;
-    }
-    .Created dl,.Created dd{
-        margin-bottom: 2%;     
-    }
-    .Created dl dd> dl { 
-        width: 50%;
-        float: left;
-    }
-    .Created dl dd:nth-of-type(3)> dl{ 
-        width: 100%;
-        clear: both;
-    }
-    .Created dl dd> dl dt img{
-        width:  200px; height:200px;                  
-        border-radius:200px;        
-        margin: 0 auto;
-        margin-bottom: 2vw; 
-        display: block;              
-    }
-     
+.main{
+    background: url('../img/logo.png') no-repeat;   
+    background-position: center 30%;
+    background-size: 20%;
+} 
+/* .main img{
+    width: 30vw; height: auto;
+    margin: 0  auto; margin-top: -60px;
+} */
+/* ========================================================== */
+.main dl:first-of-type{
+      margin: 2%;
+      position: relative;
+      top :5%;
 }
+  .main dl:first-of-type dt{
+    font-weight: 400;
+    font-size: 3.6vw;
+    margin-bottom: 1%;
     
-@viewport{
-    width: auto;
 }
-@media (max-width: 320px) and  (orientation:portrait){
-    /* .Introduce img{
-        width: 50%; height: auto;   
-        margin-bottom: 8%;    
-    }
-    .Introduce dd{
-        margin-bottom: 4%;
-        line-height: 3.6vw;
-        font-size: 2.6vw;
-    }
-    .Introduce dd:first-of-type{
-        margin-bottom: 6%; 
-        font-size: 52px;
-        line-height:68px;
-    } 
-    #zindex{
-        z-index: 15;
-    }
-    .Created{
-        text-align: center
-    }
-    .Created>dl{
-        position: relative;
-        top: 3%;}
-    .Created>dl>dt{
-        font-size: 44px;
-        line-height:60px;
-        margin-bottom: 6%;          
-    }
-    .Created>dl>dt p{
-        font-size: 3.6vw;
-        line-height:52px;       
-    }
-    .Created>dl>dt p span{
-        font-size: 2.4vw;
-    }
-    .Created dl,.Created dd{
-        margin-bottom: 1%;     
-    }
-    .Created dl dd> dl { 
-        width: 50%;
-        float: left;
-    }
-    .Created dl dd:nth-of-type(3)> dl{ 
-        width: 100%;
-        clear: both;
-    }
-    .Created dl dd> dl dt img{
-        width:  140px; height:140px;                  
-        border-radius:200px;        
-        margin: 0 auto;
-        margin-bottom: 2vw; 
-        display: block;              
-    } */
+.main dl:first-of-type dd{
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+}
+.day{
+    float: right;
+    clear: both;         
+    position: relative; 
+    margin-right: 20%;
+    margin-top: 11%;
+}
+.day dt{
+    font-size: 1.2vw;
+    margin-bottom: 1%;
+}
+.day dd{
+    font-weight: 400;    
+    font-size: 4vw;    
+}
+.day dd:nth-of-type(2n){
+    margin-bottom: 10%;        
+}
+/* ========================================================== */
+.Introduce{
+    width: 80%; margin: 0 auto;        
+}
+.Introduce dl,.Guide dl{       
+    position: relative;
+    top:-2%;
+}
+
+.Introduce dt iframe{
+    /* width: 100%;  */
+    /* margin: 0 auto;        */
+    margin-bottom: 5%;    
+}
+/* .Introduce img{
+    width: 50%; height: auto;   
+    margin-bottom: 8%;    
+    transition: 0.5s;
+}
+.Introduce img:hover{
+    width:  55%; height:auto;  
+} */
+.Introduce dd{
+    margin-bottom: 4%;
+    line-height: 1.4vw;
+    font-size: 1vw;
+}
+.Introduce dd:first-of-type{
+    margin-bottom: 6%; 
+    font-size: 2.2vw;
+    font-weight: 400;
+    line-height:2.6vw;
+} 
+/* ========================================================== */
+.Guide dl>dt {
+    margin-bottom: 5%; 
+    font-size: 2.2vw;
+    font-weight: 400;
+    line-height:2.6vw;
+}
+.N123 {
+    width: 80%;
+}
+.N123 dl{
+    float: left;
+    width: 33%;
+    /* border: 1px solid #fff; */
+}
+.N123 img{
+    width: 40%;
+    margin-bottom: 2%;   
+}
+.N123 dt{
+    font-size: 2.2vw;
+    font-weight: 400;
+    line-height:2.6vw;
+    margin-bottom: 5%;
+}
+
+.N123 dl dd{     
+    float: left;    
+    text-align: left;
+}
+.N123 dl dd:first-of-type{
+    width:  40%; height: auto;   
+}
+.N123 dl dd img{     
+    width:  90% ;height: auto;   
+    transition: 0.5s;
+}
+.N123 dl dd img:hover{
+    width:  100%; height:auto;  
+}
+.N123 dl dd:nth-of-type(2){
+    margin-bottom: 1%;
+    margin-left: 5%;
+    line-height: 2.2vw;
+    font-size: 1.8vw;
+    width: 55%;        
+    
+} 
+.N123 dl dd:nth-of-type(3){
+    margin-left: 5%;
+    line-height: 1.4vw;
+    font-size: 1vw;
+    width: 55%;
+}
+/* ========================================================== */
+.Created{
+    clear: both;
+}   
+.Created>dl>dt{
+    font-size: 2.2vw;
+    line-height:2.6vw;
+    margin-bottom: 8%;     
+    text-align: center;     
+}
+.Created>dl>dt p{
+    font-size: 1.6vw;
+    line-height:2.2vw;       
+}
+.Created>dl>dt p span{
+    font-size: 1.2vw;
+}
+.pic{
+    width: 80%; margin: 0 auto;
+}
+.pic div {
+    float: left;  
+    width: 23%;
+    text-align: center;
+    margin: 0 2%;
+}
+.pic img{
+    width:  90%;              
+    border-radius:100%;      
+    margin: 0 auto;
+    margin-bottom: 6%; 
+    display: block;    
+    transition: 0.5s;
+}
+.pic img:hover{
+    width:  100%;  
+}
+.pic dd{
+    line-height: 2.2vw;
+    font-size: 1.6vw;
+}
+.pic dd.Noto{
+    font-size: 2.2vw;
+    line-height:2.6vw;
+}
+/* ========================================================== */
+
+.QR img{
+    width: 18%;
+    min-width: 150px;
+    height: auto;
+}
+.QR img:hover{
+    width: 22%;  
 }

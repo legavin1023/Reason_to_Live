@@ -17,17 +17,16 @@
 		<![endif]-->
 
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
-		<!-- <script type="text/javascript" src="./js/jquery-ui.min.js"></script>	 -->
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>	
 		<script type="text/javascript" src="./js/jquery.fullpage.js"></script>
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>
 		<script type="text/javascript" src="./js/slide.js"></script>
-		<!-- <script type="text/javascript" src="./js/loading.js"></script> -->
 		
-		<script type="text/javascript">
+
+	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#myContainer').fullpage({
-				anchors: ['main', 'Page_1', 'Page_2', 'Page_3'],
+				anchors: ['main', 'Page_1', 'Page_2', 'Page_3', 'Page_4'],
 				loopTop: true,
 				loopBottom: true,
 				slidesNavigation: true,
@@ -42,56 +41,25 @@
 		// 애니메이션 효과로 자연스럽게 이동됨, 0.68초	
 		
 		});
-		
-		$(document).ready(function(){			
-			$(".menu>a").click(function(){
-			var submenu = $(this).next("ul");	
-			if( submenu.is(":visible") ){
-				submenu.slideUp();
-				}else{
-					submenu.slideDown();
-				}
-			});
-		});
-		var swiper = new Swiper('.swiper-container', {
-		pagination: {
-			el: '.swiper-pagination',
-			dynamicBullets: true,
-		},
-		});
 	</script>
 			
 	</head>
 	<body>
-		<nav class="">
-			<ul class="mo">
-				<li class="menu">
-					<a><img src="./img/nav-icon.png" alt=""></a>
-					<ul class="hide">
-						<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
-						<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
-						<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
-						<li data-menuanchor="Page_5" class="active"><a href="#Page_3">Created by</a></li>
-					</ul>
-				</li>			
-			</ul>	
-			<ul class="main-nav web">
+		<nav>		
+			<ul class="main-nav">
 				<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
 				<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
 				<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
 				<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
+				<li data-menuanchor="Page_4" class="active"><a href="#Page_4">QR</a></li>
 			</u>
 		</nav>
-	<!-- ================================웹================================= -->
 
 		<footer><a href="https://framer.cloud/BiMMI">Join</a></footer>
 		
-	<!-- ================================웹================================== -->
 		<div id="myContainer">
-			
-	<!-- ===============================웹================================== -->
 			<div class="section main" id="mainS">
-				<div class="web">
+				<div>
 					<dl>
 						<dt>Exhibiton at.</dt>
 						<dd>Kaywon University of Art &amp; Design</dd>
@@ -108,10 +76,8 @@
 					</dl>
 				</div>		
 			</div>		
-	<!-- ================================================================= -->
 			<div class="section Introduce center" id="PageS_1">
 				<dl>
-					<!-- <dt><img src="./img/Introduce.png" alt="설명이미지"></dt> -->
 					<dt>
 						<iframe src="https://player.vimeo.com/video/241453911?portrait=0" width="426" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					</dt>
@@ -133,9 +99,8 @@
 					
 				</dl>
 			</div>	
-	<!-- =================================웹================================ -->
 			<div class="section Guide center " id="PageS_2">
-				<dl class="web ">		
+				<dl>		
 					<dt>Exhibiton Guide</dt>
 					<dd class="center">
 						<div class="N123 ">					
@@ -159,80 +124,57 @@
 							</dl>		
 						</div>	
 					</dd>					
+				</dl>				
+			</div>	
+
+			<div class="section Created center" id="PageS_3">
+				<dl>
+					<dt>Created by<p><span>team</span> Action Beam</p></dt>
+					<dd class="center pic">
+						<div>
+							<dl>
+								<dt><img src="./img/3p_3.jpg" alt=""></dt>
+								<dd class="Noto bold">안유림</dd>						
+								<dd>Planner</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><img src="./img/3p_1.jpg" alt=""></dt>
+								<dd class="Noto bold">김영정</dd>						
+								<dd>Designer</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><img src="./img/3p_2.jpg" alt=""></dt>
+								<dd class="Noto bold">한동민</dd>						
+								<dd>Designer</dd>
+							</dl>
+						</div>					
+						<div>
+							<dl>
+								<dt><img src="./img/3p_4.jpg" alt=""></dt>
+								<dd class="Noto bold">김희선</dd>						
+								<dd>Developer</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><img src="./img/3p_5.jpg" alt=""></dt>
+								<dd class="Noto bold">전다인</dd>						
+								<dd>Developer</dd>
+							</dl>
+						</div>
+					</dd>
 				</dl>
+			</div>
+
+
+			<div class="section QR center" id="PageS_4">
+					<img src="./img/QR_Code_Reason_to_Live.png" alt="QR code">					
+			</div>
 				
-				<div class="Guide mo">					
-					<dl class="slide">					
-						<dt>Exhibiton Guide</dt>
-						<dd>01</dd>
-						<dd><img src="./img/2g_1.png" alt=""></dd>		
-						<dd>Tap it</dd>						
-						<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>			
-					</dl>
-					<dl class="slide">			
-						<dt>Guide</dt>			
-						<dd>02</dd>
-						<dd><img src="./img/2g_2.png" alt=""></dd>							
-						<dd>Scale it</dd>
-						<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>
-					</dl>
-					<dl class="slide">					
-						<dt>Guide</dt>							
-						<dd>03</dd>
-						<dd><img src="./img/2g_3.png" alt=""></dd>						
-						<dd>Look around</dd>
-						<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>			
-					</dl>		
-				</div>
-			</div>	 
-				
-	
-	<!-- =================================웹================================ -->
-
-		<div class="section Created center" id="PageS_3">
-			<dl>
-				<dt>Created by<p><span>team</span> Action Beam</p></dt>
-				<dd class="center pic">
-					<div>
-						<dl>
-							<dt><img src="./img/3p_3.jpg" alt=""></dt>
-							<dd class="Noto bold">안유림</dd>						
-							<dd>Planner</dd>
-						</dl>
-					</div>
-					<div>
-						<dl>
-							<dt><img src="./img/3p_1.jpg" alt=""></dt>
-							<dd class="Noto bold">김영정</dd>						
-							<dd>Designer</dd>
-						</dl>
-					</div>
-					<div>
-						<dl>
-							<dt><img src="./img/3p_2.jpg" alt=""></dt>
-							<dd class="Noto bold">한동민</dd>						
-							<dd>Designer</dd>
-						</dl>
-					</div>					
-					<div>
-						<dl>
-							<dt><img src="./img/3p_4.jpg" alt=""></dt>
-							<dd class="Noto bold">김희선</dd>						
-							<dd>Developer</dd>
-						</dl>
-					</div>
-					<div>
-						<dl>
-							<dt><img src="./img/3p_5.jpg" alt=""></dt>
-							<dd class="Noto bold">전다인</dd>						
-							<dd>Developer</dd>
-						</dl>
-					</div>
-				</dd>
-			</dl>
 		</div>
-
-		</div>
-
 	</body>
 </html>
