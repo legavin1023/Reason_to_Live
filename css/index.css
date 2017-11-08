@@ -41,7 +41,7 @@ body{
     min-height: 800px;
     min-width: 1280px;
 }
-.mo{display: none;}
+
 nav {
     width: 100%;
     margin: 2% 0;        
@@ -203,6 +203,7 @@ nav {
 /* ========================================================== */
 .Created{
     clear: both;
+    width: 80%; 
 }   
 .Created>dl>dt{
     font-size: 2.2vw;
@@ -218,7 +219,7 @@ nav {
     font-size: 1.2vw;
 }
 .pic{
-    width: 80%; margin: 0 auto;
+    margin: 0 auto;
 }
 .pic div {
     float: left;  
@@ -255,4 +256,8 @@ nav {
 }
 .QR img:hover{
     width: 22%;  
+}
+.QR dt{
+    margin-bottom: 2%;
+    font-size: 2.2vw;    
 }
