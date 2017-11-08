@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="./css/index.css" />
 		<link rel="stylesheet" type="text/css" href="./css/font.css" />
-		<link rel="stylesheet" type="text/css" href="./css/loading.css" />
 
 		<script type="text/javascript" src="./js/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>	
@@ -48,22 +47,17 @@
 			}
 		}
 	</script> -->
-	<script type="text/javascript" language="JavaScript">
-		var mobileKeyWords = new Array(''iPhone'', ''iPod'', ''BlackBerry'', ''Android'', ''Windows CE'', ''Windows CE;'', ''LG'', ''MOT'', ''SAMSUNG'', ''SonyEricsson'', ''Mobile'', ''Symbian'', ''Opera Mobi'', ''Opera Mini'', ''IEmobile'');
-		for (var word in mobileKeyWords){
-			if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-				window.location.href = "index_m.html";
-				break;
-			}else{
-				alert("PC");
 
-			}
-		}
+	<script type="text/javascript">
+		if ((navigator.userAgent.match(/iPhone/i)) || 
+		(navigator.userAgent.match(/iPod/i)) || 
+		(navigator.userAgent.match(/Windows CE/i)) || 
+		(navigator.userAgent.match(/Symbian/i)) || 
+		(navigator.userAgent.match(/BlackBerry/i)) || 
+		(navigator.userAgent.match(/android/i))) {
+		window.location.href = "http://" + location.host + "/m/";
+	   }
 	</script>
-		
-		
-	
-
 		
 	</head>
 	<body>
@@ -72,7 +66,7 @@
 				<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
 				<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
 				<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
-				<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
+				<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created_by</a></li>
 				<li data-menuanchor="Page_4" class="active"><a href="#Page_4">QR</a></li>
 			</u>
 		</nav>
