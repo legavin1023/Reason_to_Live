@@ -2,6 +2,7 @@
 <html lang="kr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		<meta name="viewport" content="idth = 320, initial-scale = 1">
 		<title>삶의 이유</title>
 		
 		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
@@ -19,13 +20,14 @@
 		<!-- <script type="text/javascript" src="./js/jquery-ui.min.js"></script>	 -->
 		<script type="text/javascript" src="./js/scrolloverflow.js"></script>	
 		<script type="text/javascript" src="./js/jquery.fullpage.js"></script>
-		<script type="text/javascript" src="./js//scrolloverflow.js"></script>
+		<script type="text/javascript" src="./js/scrolloverflow.js"></script>
+		<script type="text/javascript" src="./js/slide.js"></script>
 		<!-- <script type="text/javascript" src="./js/loading.js"></script> -->
 		
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#myContainer').fullpage({
-				anchors: ['mainPage', 'Page_1', 'Page_2', 'Page_3', 'Page_4', 'Page_5'],
+				anchors: ['main', 'Page_1', 'Page_2', 'Page_3'],
 				loopTop: true,
 				loopBottom: true,
 				slidesNavigation: true,
@@ -51,48 +53,44 @@
 				}
 			});
 		});
+		var swiper = new Swiper('.swiper-container', {
+		pagination: {
+			el: '.swiper-pagination',
+			dynamicBullets: true,
+		},
+		});
 	</script>
 			
 	</head>
 	<body>
-	<!-- ===============================모바일================================== -->
-		<nav class="mo">
-			<ul>
+		<nav class="">
+			<ul class="mo">
 				<li class="menu">
 					<a><img src="./img/nav-icon.png" alt=""></a>
 					<ul class="hide">
-						<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a></li>
+						<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
 						<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
 						<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
-						<li data-menuanchor="Page_5" class="active"><a href="#Page_5">Created by</a></li>
+						<li data-menuanchor="Page_5" class="active"><a href="#Page_3">Created by</a></li>
 					</ul>
 				</li>			
 			</ul>	
+			<ul class="main-nav web">
+				<li data-menuanchor="main" class="active"><a href="#main">Home</a></li>
+				<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
+				<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
+				<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
+			</u>
 		</nav>
-	<!-- ================================웹================================== -->
-			<nav class="web">
-				<ul>
-					<li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a></li>
-					<li data-menuanchor="Page_1" class="active"><a href="#Page_1">Introduce</a></li>
-					<li data-menuanchor="Page_2" class="active"><a href="#Page_2">Guide</a></li>
-					<li data-menuanchor="Page_3" class="active"><a href="#Page_3">Created by</a></li>
-				</ul>
-			</nav>
 	<!-- ================================웹================================= -->
 
 		<footer><a href="https://framer.cloud/BiMMI">Join</a></footer>
-		<div class="dlatlqkdvus center"> 
-			<div>
-				<p class="Noto">모바일로 접속해 주세요</p>
-				<img src="./img/QR_Code_Reason_to_Live.png" alt="">
-			</div>			
-		</div>
-	
+		
 	<!-- ================================웹================================== -->
 		<div id="myContainer">
 			
 	<!-- ===============================웹================================== -->
-			<div class="section main">
+			<div class="section main" id="mainS">
 				<div class="web">
 					<dl>
 						<dt>Exhibiton at.</dt>
@@ -100,12 +98,10 @@
 						<dd>Digital Media Design</dd>
 						<dd>Gradutation Show</dd>
 					</dl>
-					<dl>
+					<dl class="day">
 						<dt>Fri.</dt>
 						<dd>2017.</dd>
 						<dd>11.17</dd>
-					</dl>
-					<dl>
 						<dt>Mon.</dt>
 						<dd>2017.</dd>
 						<dd>11.20</dd>
@@ -113,9 +109,13 @@
 				</div>		
 			</div>		
 	<!-- ================================================================= -->
-			<div class="section Introduce center">
+			<div class="section Introduce center" id="PageS_1">
 				<dl>
-					<dt><img src="./img/Introduce.png" alt="설명이미지"></dt>
+					<!-- <dt><img src="./img/Introduce.png" alt="설명이미지"></dt> -->
+					<dt>
+						<iframe src="https://player.vimeo.com/video/241453911?portrait=0" width="426" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					</dt>
+					
 					<dd>
 						What’s your<br>
 						Reason to live?
@@ -134,128 +134,104 @@
 				</dl>
 			</div>	
 	<!-- =================================웹================================ -->
-			<div class="section Guide center ">
-				<dl class="web">		
+			<div class="section Guide center " id="PageS_2">
+				<dl class="web ">		
 					<dt>Exhibiton Guide</dt>
-					<dd>
-						<dt>01</dt>
-						<dd><img src="./img/2g_1.png" alt=""></dd>		
-						<dd>Tap it</dd>						
-						<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>					
-					</dd>
-					<dd>
-						<dt>02</dt>
-						<dd><img src="./img/2g_2.png" alt=""></dd>							
-						<dd>Scale it</dd>
-						<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>									
-					</dd>
-					<dd>						
-						<dt>03</dt>
-						<dd><img src="./img/2g_3.png" alt=""></dd>						
-						<dd>Look around</dd>
-						<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>	
-					</dd>		
+					<dd class="center">
+						<div class="N123 ">					
+							<dl>
+								<dt>01</dt>
+								<dd><img src="./img/2g_1.png" alt=""></dd>		
+								<dd>Tap it</dd>						
+								<dd class="Noto">여러 사람들의 살아가는  <br>이유를 볼 수 있어요.</dd>					
+							</dl>
+							<dl>
+								<dt>02</dt>
+								<dd><img src="./img/2g_2.png" alt=""></dd>							
+								<dd>Scale it</dd>
+								<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>									
+							</dl>
+							<dl>						
+								<dt>03</dt>
+								<dd><img src="./img/2g_3.png" alt=""></dd>						
+								<dd>Look around</dd>
+								<dd class="Noto">사람들의 살아가는 이유로 가득<br>찬 공간을 둘러보세요.</dd>	
+							</dl>		
+						</div>	
+					</dd>					
 				</dl>
 				
-				<dl class=" Guide mo">					
-					<dt>Exhibiton Guide</dt>
-					<dd>01</dd>
-					<dd><img src="./img/2g_1.png" alt=""></dd>		
-					<dd>Tap it</dd>						
-					<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>			
-				</dl>
-	<!-- =================================모바일================================ -->
-<!-- 	
-				<div class="slide mo">		
-					<dl>
+				<div class="Guide mo">					
+					<dl class="slide">					
 						<dt>Exhibiton Guide</dt>
 						<dd>01</dd>
 						<dd><img src="./img/2g_1.png" alt=""></dd>		
 						<dd>Tap it</dd>						
-						<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>
+						<dd class="Noto">여러 사람들의 살아가는 이유를 <br>볼 수 있어요.</dd>			
 					</dl>
-				</div>
-				<div  class="slide mo">
-					<dl>
+					<dl class="slide">			
 						<dt>Guide</dt>			
 						<dd>02</dd>
 						<dd><img src="./img/2g_2.png" alt=""></dd>							
 						<dd>Scale it</dd>
 						<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>
 					</dl>
+					<dl class="slide">					
+						<dt>Guide</dt>							
+						<dd>03</dd>
+						<dd><img src="./img/2g_3.png" alt=""></dd>						
+						<dd>Look around</dd>
+						<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>			
+					</dl>		
 				</div>
-				<div  class=" slide mo">
-				<dl>
-					<dt>Guide</dt>							
-					<dd>03</dd>
-					<dd><img src="./img/2g_3.png" alt=""></dd>						
-					<dd>Look around</dd>
-					<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>	</dl>		
-				</div>	 -->
-			</div>		 
-		
+			</div>	 
 				
-			<div class="section Guide mo center">
-				<dl>
-					<dt>Guide</dt>			
-					<dd>02</dd>
-					<dd><img src="./img/2g_2.png" alt=""></dd>							
-					<dd>Scale it</dd>
-					<dd class="Noto">공감이 가는 생각들을 키워 <br>추천할 수 있어요.</dd>
-				</dl>
-			</div>
-			<div class="section sm Guide mo center">
-				<dl>
-					<dt>Guide</dt>							
-					<dd>03</dd>
-					<dd><img src="./img/2g_3.png" alt=""></dd>						
-					<dd>Look around</dd>
-					<dd class="Noto">사람들의 살아가는 이유로 가득찬<br> 공간을 둘러보세요.</dd>			
-				</dl>				
-			</div>	
+	
 	<!-- =================================웹================================ -->
 
-			<div class="section Created " id="zindex">
-				<dl>
-					<dt>Created by<p><span>team</span> Action Beam</p></dt>
-					<dd>
+		<div class="section Created center" id="PageS_3">
+			<dl>
+				<dt>Created by<p><span>team</span> Action Beam</p></dt>
+				<dd class="center pic">
+					<div>
 						<dl>
 							<dt><img src="./img/3p_3.jpg" alt=""></dt>
-							<dd class="Noto">안유림</dd>						
+							<dd class="Noto bold">안유림</dd>						
 							<dd>Planner</dd>
 						</dl>
-					</dd>
-					<dd>
+					</div>
+					<div>
 						<dl>
 							<dt><img src="./img/3p_1.jpg" alt=""></dt>
-							<dd class="Noto">김영정</dd>						
+							<dd class="Noto bold">김영정</dd>						
 							<dd>Designer</dd>
 						</dl>
-					</dd>
-					<dd>
+					</div>
+					<div>
 						<dl>
 							<dt><img src="./img/3p_2.jpg" alt=""></dt>
-							<dd class="Noto">한동민</dd>						
+							<dd class="Noto bold">한동민</dd>						
 							<dd>Designer</dd>
 						</dl>
-					</dd>
-				
-					<dd>
+					</div>					
+					<div>
 						<dl>
 							<dt><img src="./img/3p_4.jpg" alt=""></dt>
-							<dd class="Noto">김희선</dd>						
-							<dd>Developerr</dd>
-						</dl>
-					</dd>
-					<dd>
-						<dl>
-							<dt><img src="./img/3p_5.jpg" alt=""></dt>
-							<dd class="Noto">전다인</dd>						
+							<dd class="Noto bold">김희선</dd>						
 							<dd>Developer</dd>
 						</dl>
-					</dd>
-				</dl>
-			</div>		
+					</div>
+					<div>
+						<dl>
+							<dt><img src="./img/3p_5.jpg" alt=""></dt>
+							<dd class="Noto bold">전다인</dd>						
+							<dd>Developer</dd>
+						</dl>
+					</div>
+				</dd>
+			</dl>
+		</div>
+
 		</div>
 
 	</body>
