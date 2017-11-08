@@ -38,14 +38,18 @@
 		
 	</script>
 	<script type="text/javascript">
-	
-	var uAgent =navigator.userAgent.toLocaleLowerCase();
+		var filter = "win16|win32|win64|mac";
 
-		var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
-		for (var i = 0; i &lt; mobilePhones.length; i++)
-			if (uAgent.indexOf(mobilePhones[i]) != -1)
-           document.location = "inxex_m.html";
+		if(navigator.platform){
+			if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+			alert("Mobile");
+			}else{
+			alert("PC");
+			}
+		}
 	</script>
+
+
 		
 	</head>
 	<body>
