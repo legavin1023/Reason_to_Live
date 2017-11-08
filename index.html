@@ -35,8 +35,18 @@
 		// // 애니메이션 효과로 자연스럽게 이동됨, 0.68초	
 		
 		// });
+		
 	</script>
-			
+	<script type="text/javascript">
+	
+	var uAgent =navigator.userAgent.toLocaleLowerCase();
+
+		var mobilePhones = new Array('iphone', 'ipod', 'ipad', 'android', 'blackberry', 'windows ce','nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile');
+		for (var i = 0; i &lt; mobilePhones.length; i++)
+			if (uAgent.indexOf(mobilePhones[i]) != -1)
+           document.location = "inxex_m.html";
+	</script>
+		
 	</head>
 	<body>
 		<nav>		
