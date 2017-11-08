@@ -48,16 +48,15 @@
 		}
 	</script> -->
 
-	<script type="text/javascript">
-		if ((navigator.userAgent.match(/iPhone/i)) || 
-		(navigator.userAgent.match(/iPod/i)) || 
-		(navigator.userAgent.match(/Windows CE/i)) || 
-		(navigator.userAgent.match(/Symbian/i)) || 
-		(navigator.userAgent.match(/BlackBerry/i)) || 
-		(navigator.userAgent.match(/android/i))) {
-		window.location.href = "http://" + location.host + "/m/";
-	   }
+	<script language="JavaScript">
+      var uAgent = navigator.userAgent.toLowerCase();
+      var mobilePhones = new Array('iphone','ipod','android','blackberry','windowsce','nokia','webos','operamini','sonyericsson','opera mobi','iemobile');
+      for(var i=0;i<mobilePhones.length;i++)
+            if(uAgent.indexOf(mobilePhones[i]) != -1)
+                    document.location="index_m.html";
 	</script>
+
+
 		
 	</head>
 	<body>
