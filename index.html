@@ -37,7 +37,7 @@
 		// });
 		
 	</script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		var filter = "win16|win32|win64|mac";
 
 		if(navigator.platform){
@@ -47,8 +47,22 @@
 			alert("PC");
 			}
 		}
-	</script>
+	</script> -->
+	<script type="text/javascript" language="JavaScript">
+		var mobileKeyWords = new Array(''iPhone'', ''iPod'', ''BlackBerry'', ''Android'', ''Windows CE'', ''Windows CE;'', ''LG'', ''MOT'', ''SAMSUNG'', ''SonyEricsson'', ''Mobile'', ''Symbian'', ''Opera Mobi'', ''Opera Mini'', ''IEmobile'');
+		for (var word in mobileKeyWords){
+			if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+				window.location.href = "index_m.html";
+				break;
+			}else{
+				alert("PC");
 
+			}
+		}
+	</script>
+		
+		
+	
 
 		
 	</head>
