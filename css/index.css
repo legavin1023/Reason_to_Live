@@ -1,12 +1,12 @@
 nav{position: absolute;}
  /* ========================================================== */
-body{background-color: #000;color: #fff;}
+body{background-color: #000;color: #fff;font-size: 14px;}
 nav {z-index: 10; position: absolute;}
 footer {z-index: 20; position: absolute;}
 .section{z-index: 1;}
 .section dl{
     position: relative;
-    top:-2vw;
+    top:-2em;
 } 
  /* ========================================================== */
 a:link { color: rgb(0, 0, 0); text-decoration: none;}
@@ -23,7 +23,7 @@ body{
     font-family:'Helvetica';
     font-style:normal;
     font-weight:400;    
-    letter-spacing: 0.1vw; 
+    letter-spacing: 0.1em; 
 }
 
 .Noto{
@@ -59,8 +59,8 @@ nav {
     /* margin: 1%; */    
     display: block;
     text-decoration: none;
-    font-size: 1.2vw;
-    line-height: 1.4vw;
+    font-size: 1.2em;
+    line-height: 1.4em;
     transition: 0.5s;       
     color: rgb(136, 136, 136);    
 }
@@ -76,7 +76,7 @@ nav {
     background-size: 20%;
 } 
 /* .main img{
-    width: 30vw; height: auto;
+    width: 30em; height: auto;
     margin: 0  auto; margin-top: -60px;
 } */
 /* ========================================================== */
@@ -87,28 +87,28 @@ nav {
 }
   .main dl:first-of-type dt{
     font-weight: 400;
-    font-size: 3.6vw;
+    font-size: 3.4em;
     margin-bottom: 1%;
     
 }
 .main dl:first-of-type dd{
-    font-size: 1.4vw;
-    line-height: 1.8vw;
+    font-size: 1.4em;
+    line-height: 1.2em;
 }
 .day{
     float: right;
     clear: both;         
     position: relative; 
     margin-right: 20%;
-    margin-top: 11%;
+    margin-top: 13%;
 }
 .day dt{
-    font-size: 1.2vw;
+    font-size: 1.4em;
     margin-bottom: 1%;
 }
 .day dd{
     font-weight: 400;    
-    font-size: 4vw;    
+    font-size: 4em;    
 }
 .day dd:nth-of-type(2n){
     margin-bottom: 10%;        
@@ -137,21 +137,21 @@ nav {
 } */
 .Introduce dd{
     margin-bottom: 4%;
-    line-height: 1.6vw;
-    font-size: 1.2vw;
+    line-height: 1.2em;
+    font-size: 1.2em;
 }
 .Introduce dd:first-of-type{
     margin-bottom: 6%; 
-    font-size: 2.2vw;
+    font-size: 2.2em;
     font-weight: 400;
-    line-height:2.6vw;
+    line-height:1.2em;
 } 
 /* ========================================================== */
 .Guide dl>dt {
-    margin-bottom: 5%; 
-    font-size: 2.2vw;
+    margin-bottom: 2%; 
+    font-size: 2.2em;
     font-weight: 400;
-    line-height:2.6vw;
+    line-height:2.6em;
 }
 .N123 {
     width: 80%;
@@ -166,9 +166,9 @@ nav {
     margin-bottom: 2%;   
 }
 .N123 dt{
-    font-size: 2.2vw;
+    font-size: 2.2em;
     font-weight: 400;
-    line-height:2.6vw;
+    line-height:2.6em;
     margin-bottom: 5%;
 }
 
@@ -189,15 +189,15 @@ nav {
 .N123 dl dd:nth-of-type(2){
     margin-bottom: 1%;
     margin-left: 5%;
-    line-height: 2.2vw;
-    font-size: 1.8vw;
+    line-height: 2.2em;
+    font-size: 1.8em;
     width: 55%;        
     
 } 
 .N123 dl dd:nth-of-type(3){
     margin-left: 5%;
-    line-height: 1.4vw;
-    font-size: 1vw;
+    line-height: 1.4em;
+    font-size: 1em;
     width: 55%;
 }
 /* ========================================================== */
@@ -205,17 +205,17 @@ nav {
     width: 80%;  
 }
 .Created>dl>dt{
-    font-size: 2.2vw;
-    line-height:2.6vw;
+    font-size: 2.2em;
+    line-height:2em;
     margin-bottom: 8%;     
     text-align: center;     
 }
 .Created>dl>dt p{
-    font-size: 1.6vw;
-    line-height:2.2vw;       
+    font-size: 0.8em;
+    line-height:0.8em;      
 }
 .Created>dl>dt p span{
-    font-size: 1.2vw;
+    font-size: 0.8em;
 }
 .pic{
     margin: 0 auto;
@@ -230,7 +230,7 @@ nav {
     width:  90%;              
     border-radius:100%;      
     margin: 0 auto;
-    margin-bottom: 6%; 
+    margin-bottom: 2em; 
     display: block;    
     transition: 0.5s;
 }
@@ -238,12 +238,12 @@ nav {
     width:  100%;  
 }
 .pic dd{
-    line-height: 2.2vw;
-    font-size: 1.6vw;
+    line-height: 2em;
+    font-size: 1.6em;
 }
 .pic dd.Noto{
-    font-size: 2.2vw;
-    line-height:2.6vw;
+    font-size: 2.2em;
+    line-height:0.8em;
 }
 /* ========================================================== */
 
@@ -258,5 +258,5 @@ nav {
 }
 .QR dt{
     margin-bottom: 2%;
-    font-size: 2.2vw;    
+    font-size: 2.2em;    
 }
