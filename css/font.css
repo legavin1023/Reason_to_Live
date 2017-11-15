@@ -2,17 +2,16 @@
     font-family: 'KoPubDotum';
     font-style:normal;
     font-weight:400;
-    src: local('KoPubDotum'), local('KoPubDotum'),
+    src: 
     url(../font/KoPub_Dotum_Medium.ttf)
     , url(../font/KoPub_Dotum_Pro_Medium.otf);
-    ;
 }
 
 @font-face {
     font-family: 'KoPubDotum';
     font-style:normal;
     font-weight:100;
-    src: local('KoPubDotum'), local('KoPubDotum'),
+    src:
     url(../font/KoPub_Dotum_Light.ttf)
     , url(../font/KoPub_Dotum_Pro_Light.otf);
 }

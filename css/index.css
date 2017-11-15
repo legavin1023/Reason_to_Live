@@ -122,7 +122,10 @@ nav {
     top:-2em;
 }
 
-.Introduce dt iframe{
+/* .Introduce dt iframe{
+    margin-bottom: 5%;    
+} */
+.Introduce dt video{
     /* width: 100%;  */
     /* margin: 0 auto;        */
     margin-bottom: 5%;    
