@@ -24,6 +24,8 @@ body{
     font-style:normal;
     font-weight:400;    
     letter-spacing: 0.1em; 
+    min-height: 800px;
+    min-width: 1280px;
 }
 
 .Noto{
@@ -36,10 +38,6 @@ body{
     font-family: 'KoPubDotum';
     font-style:normal;
     font-weight:400; 
-}
-body{
-    min-height: 800px;
-    min-width: 1280px;
 }
 
 nav {
@@ -100,7 +98,7 @@ nav {
     clear: both;         
     position: relative; 
     margin-right: 20%;
-    margin-top: 13%;
+    margin-top: 14%;
 }
 .day dt{
     font-size: 1.4em;
@@ -250,16 +248,23 @@ nav {
 }
 /* ========================================================== */
 
-.QR img{
-    width: 18%;
+/* .QR img{
+    width: 100%;
     min-width: 150px;
     transition: 0.5s;
     height: auto;
+} */
+/* .QR img:hover{
+    width: 25%;  
 }
-.QR img:hover{
-    width: 22%;  
-}
+ */
 .QR dt{
-    margin-bottom: 2%;
-    font-size: 2.2em;    
+    margin-bottom: 0.4em;
+    font-size: 2em;    
+}
+
+.QR img{   
+    width: 10em;
+    min-width: 200px;
+    height: auto;
 }
